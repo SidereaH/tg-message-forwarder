@@ -10,5 +10,5 @@ routes:
     filters:
       allow_bots: true
       allow_humans: false
-      allow_channels: true   конкретный # сообщения “от имени канала/чата” (sender_chat)
+      allow_channels: true #конкретный сообщения “от имени канала/чата” (sender_chat)
       allowed_content_types: ['text', 'photo', 'video', 'document', 'sticker']
