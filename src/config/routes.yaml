@@ -1,0 +1,14 @@
+routes:
+  - id: 'route_1'
+    source:
+      chat_id: -1001111111111
+      thread_id: 123 # топик; если null/omit — вся группа
+    destinations:
+      - chat_id: -1002222222222
+      - chat_id: -1003333333333
+        thread_id: 777 # можно слать в конкретный топик в другом форуме
+    filters:
+      allow_bots: true
+      allow_humans: false
+      allow_channels: true   конкретный # сообщения “от имени канала/чата” (sender_chat)
+      allowed_content_types: ['text', 'photo', 'video', 'document', 'sticker']

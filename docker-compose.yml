@@ -1,0 +1,15 @@
+services:
+  tg_forwarder:
+    build: .
+    container_name: tg_forwarder
+    restart: unless-stopped
+
+    env_file:
+      - .env
+
+    environment:
+      TZ: Europe/Moscow
+
+    volumes:
+      # чтобы можно было править маршруты без rebuild
+      - ./src/config/routes.yaml:/app/src/config/routes.yaml:ro
