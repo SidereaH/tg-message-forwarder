@@ -45,6 +45,7 @@ class ProcessIncomingMessage:
                     to_thread_id=d.thread_id,
                     from_chat_id=msg.chat_id,
                     message_id=msg.message_id,
+                    text=getattr(msg, "text", None),
                 )
             matched += 1
 

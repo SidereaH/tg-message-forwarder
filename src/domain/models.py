@@ -26,12 +26,14 @@ class Route:
     filters: FilterPolicy
     enabled: bool = True
 
+
 @dataclass(frozen=True)
 class MessageView:
     chat_id: int
     message_id: int
     thread_id: Optional[int]
-    from_is_bot: Optional[bool]        # None если from_user нет
-    from_is_human: Optional[bool]      # None если from_user нет
-    from_is_channel: bool              # sender_chat is not None
-    content_type: str                  # "text", "photo", ...
+    from_is_bot: Optional[bool]
+    from_is_human: Optional[bool]
+    from_is_channel: bool
+    content_type: str
+    text: Optional[str] = None   # <-- добавь
