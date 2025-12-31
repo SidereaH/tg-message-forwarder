@@ -1,4 +1,4 @@
-# ShadowMessageForwarder — MTProto (Telethon) + Bot API (aiogram)
+# MessageForwarder — MTProto (Telethon) + Bot API (aiogram)
 
 Форвардер, который **читает сообщения в группах/топиках через MTProto (как обычный пользователь)** и **доставляет их через Bot API** в указанные чаты.
 
@@ -154,7 +154,7 @@ routes:
 Пиши её **в нужном месте** (в нужной группе и в нужном топике):
 
 ```
-/id@shadowsupportforwarder_bot
+/id@your_bot_username
 ```
 
 Бот ответит:
